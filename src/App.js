@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+// import all components here
+import Navbar from './components/navbar'
+import About from './components/about'
 
 function App() {
+
+  // render the navidation here
   return (
-   <h1 class="bg-gray-600 text-3xl font-bold underline">
-    Hello, I'm Asibeh!
-  </h1>
+   <main className="text-gray-400 bg-gray-600 body-font">
+      <Navbar />
+      <About />
+   </main>
   );
 }
 
