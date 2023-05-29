@@ -1,5 +1,5 @@
 // src/components/about.js
-// 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
+// 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
 import React from "react";
 // install heroicons => npm install @heroicons/react
 
@@ -14,10 +14,9 @@ function About() {
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            I'm Asibeh, a full-stack developer
-          </h1>
+            I am Asibeh, a full-stack developer</h1>
           <p className="mb-8 leading-relaxed">
-           I'm a full-stack developer, Data Scientist, Researcher and trainer
+           Python developer, Data Scientist, Researcher and trainer
 
           </p>
           <div className="flex justify-center">
