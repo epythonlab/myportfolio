@@ -3,7 +3,7 @@
 import React from "react";
 // install heroicons => npm install @heroicons/react
 
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import sample from '../assets/sample.gif';
 
 function About() {
@@ -26,9 +26,9 @@ function About() {
               Hir me <ArrowRightIcon className="w-4 h-4 ml-1 mt-2" />
             </a>
             <a
-              href="#projects"
+              href="https://www.github.com/epythonlab/" rel="noreferrer" target="_blank"
               className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-              Projects
+              <CodeBracketIcon className="w-4 h-4 mr-2 mt-2" />Projects
             </a>
           </div>
         </div>

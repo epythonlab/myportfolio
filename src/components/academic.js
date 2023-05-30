@@ -22,7 +22,6 @@ function Academic(){
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 sm:grid-col-1 ">
 	        {education.map((edu) => (
 
-
 		        <div key={edu.id} className="mb-4 max-w-sm gr-2 rounded overflow-hidden shadow-lg bg-white">
 				  <div className="px-6 py-4" key={edu.id}>
 				  	<h2 className="tracking-widest text-xl title-font font-bold text-green-400 mb-1">
@@ -32,7 +31,10 @@ function Academic(){
 				    <p className="font-medium text-sm">{edu.issued}</p>
 				  </div>
 				  <div className="px-6 pt-4 pb-2">
-				    <a href={edu.certificate} target={edu.certificate ==='#'? "_self": "_blank"} className="items-center inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 focus:outline-none hover:bg-gray-300">Certificate</a>
+				  {/* some certificates are not available */}
+				  {edu.certificate ==='#'? "":
+				    <a href={edu.certificate} target="_blank" rel="noreferrer" className="items-center inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 focus:outline-none hover:bg-gray-300">Certificate</a>
+		  		  }
 		  		  </div>
 				</div>
 			))}

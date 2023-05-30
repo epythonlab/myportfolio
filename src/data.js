@@ -43,3 +43,64 @@ export const education = [
 		'certificate': 'https://www.credly.com/badges/aeee67f2-74e2-4788-94d9-365f907d95e7/public_url',
     },
 ];
+// experiences
+
+export const experiences = [
+	{
+		'id': 1,
+		'title': 'Instructor and Researcher',
+		'issued': 'Aug 1, 2013 - Oct 30, 2019(6 years)',
+		'college': 'Ambo University, Ethiopia',
+		'skills': ['Teaching', 'Research', 'Content Development'],
+    },
+
+    {
+    	'id':2,
+		'title': 'Android Developer',
+		'issued': 'Jan 1, 2018 - Nov 30, 2019(23 months)',
+		'company': 'Missesso Software Development p.l.c, Addis Ababa',
+		'skills': ['Java', 'Firebase', 'JSON', 'Android Studio'],
+    },
+
+    {
+    	'id':3,
+		'title': 'Coding Trainer',
+		'issued': 'June, 1 - 2018 -  Nov 30, 2019(5 months)',
+		'company': 'OmniTech Addis Consultancy Plc, Addis Ababa',
+		'skills': ['Java', 'Android', 'HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
+    },
+
+     {
+     	'id':4,
+		'title': 'Coupon Manager(Data Manager)',
+		'issued': 'Dec 1, 2019 - May 30, 2020(6 months)',
+		'company': 'Ethiopian Public health Institute, Addis Ababa',
+		'skills': ['Data collection', 'Data analysis'],
+    },
+
+     {
+     	'id': 5,
+		'title': 'Freelance Python Developer',
+		'issued': 'Sep 1, 2020 - Present(2 years)',
+		'company': 'Epythonlab',
+		'skills': ['Python', 'Flask', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Numpy'],
+    },
+
+    {
+     	'id': 6,
+		'title': 'Fullstack Trainer',
+		'issued': 'Feb 1, 2023 - Present',
+		'company': 'Sage Training Institute, Addis Ababa',
+		'skills': ['C++', 'Linux Commands', 'Git/Github', 'HTML/CSS/JS', 'Reactjs', 'RESTfull API', 'node js', 'MongoDB', 'tailwind'],
+    },
+];
+
+// other skills
+export const skills = [
+	'Leadership and Communication',
+	'Team Management and Content Development',
+	'Software Development & MERN Stack','Predictive Business Analytics',
+	'Data Science & Machine Learning','Problem solving and Analytical thinking',
+	'Pedagogical Teaching and Research',
+	'Linux Operating System'
+	]
