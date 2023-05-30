@@ -21,6 +21,10 @@ function Navbar() {
           <a href="#skills" className="mr-5 hover:text-white">
             Skills
           </a>    
+
+           <a href="#publication" className=" hidden sm:block  mr-5 hover:text-white">
+            Publication
+          </a> 
         </nav>
         {/*
         <a

@@ -1,12 +1,15 @@
 // src/components/about.js
-// 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
+// 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
 import React from "react";
+
 // install heroicons => npm install @heroicons/react
 
-import { ArrowRightIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon, CodeBracketIcon, PhoneIcon, AtSymbolIcon } from "@heroicons/react/24/solid";
 import sample from '../assets/sample.gif';
 
 function About() {
+  // contact show dialog
+  const [showModal, setShowModal] = React.useState(false);
   // about page
   return (
 
@@ -21,7 +24,7 @@ function About() {
           </p>
           <div className="flex justify-center">
             <a
-              href="#contact"
+              href="#contact"  onClick={() => setShowModal(true)}
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
               Hir me <ArrowRightIcon className="w-4 h-4 ml-1 mt-2" />
             </a>
@@ -39,6 +42,48 @@ function About() {
             alt="code demo" src={sample} />
         </div>
       </div>
+
+
+      {/* contact form dialog */}
+      {showModal ? (
+        <>
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+          >
+            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+              {/*content*/}
+              <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                {/*header*/}
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                  <h3 className="text-md font-bold text-gray-600">
+                   Contact me via
+                  </h3>
+                  
+                </div>
+                {/*body*/}
+                <div className="relative p-6 flex-auto">
+                 <p className ="text-green-600 hover:underline"> 
+                 <AtSymbolIcon className="w-4 h-4 inline-block mb-0" /> 
+                 <a href ="https://t.me/asibehtenager/" rel="noreferrer" target="_blank" >asibehtenager on telegram</a>
+                 </p>
+                </div>
+
+                {/*footer*/}
+                <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                  <button
+                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Close
+                  </button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        </>
+      ) : null}
     </section>
   );
 }

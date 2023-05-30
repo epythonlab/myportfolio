@@ -104,3 +104,22 @@ export const skills = [
 	'Pedagogical Teaching and Research',
 	'Linux Operating System'
 	]
+
+// publications
+export const publications = [
+{
+	'title': 'Pests and diseases diagnostic mobile tool “m-WHEAT” for wheat crop in Ethiopia',
+	'url': 'https://www.researchgate.net/publication/319216136_Pests_and_diseases_diagnostic_mobile_tool_m-WHEAT_for_wheat_crop_in_Ethiopia'
+},
+
+{
+	'title': 'Multi-Lingual Mobile Application to Improve the Pharmaceutical Care of Patients in Ethiopia',
+	'url': 'https://www.researchgate.net/publication/367152149_Multi-Lingual_Mobile_Application_to_Improve_the_Pharmaceutical_Care_of_Patients_in_Ethiopia'
+},
+{
+	'title': 'Best Practices of Classification Models towards Predicting Loan Type',
+	'url': 'https://medium.com/@dtechane6/best-practices-of-classification-models-towards-predicting-loan-type-c510d9b0dff6'
+},
+
+
+	]

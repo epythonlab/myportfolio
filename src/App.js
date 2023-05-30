@@ -7,6 +7,7 @@ import Academic from './components/academic'
 import Experience from './components/experience'
 import Skills from './components/skill'
 import Footer from './components/footer'
+import Publication from './components/publication'
 function App() {
 
   // render the navidation here
@@ -17,6 +18,7 @@ function App() {
       <Academic />
       <Experience />
       <Skills />
+      <Publication />
       <Footer />
     </main>
   );
